@@ -8,34 +8,23 @@
 
 #import "WGLAppDelegate.h"
 
+#import "Datastore.h"
+#import "RootViewController.h"
+
 @implementation WGLAppDelegate
 
-@synthesize window=_window;
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-  self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
-  
-//  Class ADWebView = NSClassFromString(@"ADWebView");
-//  UIWebView* webView = (UIWebView *)[[[ADWebView alloc] initWithFrame:self.window.bounds] autorelease];
-//  [webView setWebGLEnabled:YES];
+    [[Datastore sharedDatastore] open:@"bookmark.db"];
     
-  UIWebView* webView = [[[UIWebView alloc] initWithFrame:self.window.bounds] autorelease];
-  
-  id webDocumentView = [webView performSelector:@selector(_browserView)];
-  id backingWebView = [webDocumentView performSelector:@selector(webView)];
-  [backingWebView _setWebGLEnabled:YES];
-  
-  NSString* htmlPath = [[NSBundle mainBundle] pathForResource:@"WebGL" ofType:@"html"];
-  NSURLRequest* request = [NSURLRequest requestWithURL:[NSURL fileURLWithPath:htmlPath]];
-  [webView loadRequest:request];
-  
-  UIViewController* viewController = [[[UIViewController alloc] init] autorelease];
-  viewController.view = webView;
-  
-  self.window.rootViewController = viewController;
-  [self.window makeKeyAndVisible];
-  
-  return YES;
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    // Override point for customization after application launch.
+    
+    RootViewController *rootViewController = [RootViewController.alloc init];
+    self.navigationController = [UINavigationController.alloc initWithRootViewController:rootViewController];
+    self.window.rootViewController = self.navigationController;
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    return YES;
 }
 
 @end

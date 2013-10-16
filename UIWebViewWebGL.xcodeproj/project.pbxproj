@@ -7,16 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C688254180DB7DE00EC6E0A /* WebGLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C688252180DB7DE00EC6E0A /* WebGLViewController.m */; };
+		0C688255180DB7DE00EC6E0A /* WebGLViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C688253180DB7DE00EC6E0A /* WebGLViewController.xib */; };
+		0C688259180DBBB800EC6E0A /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C688257180DBBB800EC6E0A /* RootViewController.m */; };
+		0C68825A180DBBB800EC6E0A /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C688258180DBBB800EC6E0A /* RootViewController.xib */; };
+		0C688261180DC00C00EC6E0A /* Datastore.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C688260180DC00C00EC6E0A /* Datastore.m */; };
+		0C688263180DC19000EC6E0A /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C688262180DC19000EC6E0A /* libsqlite3.dylib */; };
+		0C688267180DC30300EC6E0A /* Bookmark.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C688266180DC30300EC6E0A /* Bookmark.m */; };
+		0C688269180DC92200EC6E0A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C688268180DC92200EC6E0A /* Default-568h@2x.png */; };
 		D89DC61D14592F50000FC7C6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D89DC61C14592F50000FC7C6 /* UIKit.framework */; };
 		D89DC61F14592F50000FC7C6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D89DC61E14592F50000FC7C6 /* Foundation.framework */; };
 		D89DC62114592F50000FC7C6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D89DC62014592F50000FC7C6 /* CoreGraphics.framework */; };
 		D89DC62714592F50000FC7C6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D89DC62514592F50000FC7C6 /* InfoPlist.strings */; };
 		D89DC62914592F50000FC7C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D89DC62814592F50000FC7C6 /* main.m */; };
 		D89DC62D14592F50000FC7C6 /* WGLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D89DC62C14592F50000FC7C6 /* WGLAppDelegate.m */; };
-		D89DC634145931B3000FC7C6 /* WebGL.html in Resources */ = {isa = PBXBuildFile; fileRef = D89DC633145931B3000FC7C6 /* WebGL.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C688251180DB7DE00EC6E0A /* WebGLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebGLViewController.h; sourceTree = "<group>"; };
+		0C688252180DB7DE00EC6E0A /* WebGLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebGLViewController.m; sourceTree = "<group>"; };
+		0C688253180DB7DE00EC6E0A /* WebGLViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebGLViewController.xib; sourceTree = "<group>"; };
+		0C688256180DBBB800EC6E0A /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		0C688257180DBBB800EC6E0A /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; tabWidth = 4; };
+		0C688258180DBBB800EC6E0A /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		0C68825F180DC00C00EC6E0A /* Datastore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Datastore.h; sourceTree = "<group>"; };
+		0C688260180DC00C00EC6E0A /* Datastore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Datastore.m; sourceTree = "<group>"; };
+		0C688262180DC19000EC6E0A /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		0C688265180DC30300EC6E0A /* Bookmark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bookmark.h; sourceTree = "<group>"; };
+		0C688266180DC30300EC6E0A /* Bookmark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bookmark.m; sourceTree = "<group>"; };
+		0C688268180DC92200EC6E0A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		D89DC61814592F50000FC7C6 /* UIWebViewWebGL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIWebViewWebGL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D89DC61C14592F50000FC7C6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D89DC61E14592F50000FC7C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -27,7 +46,6 @@
 		D89DC62A14592F50000FC7C6 /* UIWebViewWebGL-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIWebViewWebGL-Prefix.pch"; sourceTree = "<group>"; };
 		D89DC62B14592F50000FC7C6 /* WGLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGLAppDelegate.h; sourceTree = "<group>"; };
 		D89DC62C14592F50000FC7C6 /* WGLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGLAppDelegate.m; sourceTree = "<group>"; };
-		D89DC633145931B3000FC7C6 /* WebGL.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = WebGL.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C688263180DC19000EC6E0A /* libsqlite3.dylib in Frameworks */,
 				D89DC61D14592F50000FC7C6 /* UIKit.framework in Frameworks */,
 				D89DC61F14592F50000FC7C6 /* Foundation.framework in Frameworks */,
 				D89DC62114592F50000FC7C6 /* CoreGraphics.framework in Frameworks */,
@@ -44,16 +63,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C688250180DB7B000EC6E0A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0C688251180DB7DE00EC6E0A /* WebGLViewController.h */,
+				0C688252180DB7DE00EC6E0A /* WebGLViewController.m */,
+				0C688253180DB7DE00EC6E0A /* WebGLViewController.xib */,
+				0C688256180DBBB800EC6E0A /* RootViewController.h */,
+				0C688257180DBBB800EC6E0A /* RootViewController.m */,
+				0C688258180DBBB800EC6E0A /* RootViewController.xib */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		0C68825B180DBF7100EC6E0A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0C688264180DC2F600EC6E0A /* Value */,
+				0C68825F180DC00C00EC6E0A /* Datastore.h */,
+				0C688260180DC00C00EC6E0A /* Datastore.m */,
+			);
+			indentWidth = 4;
+			name = Model;
+			sourceTree = "<group>";
+			tabWidth = 4;
+		};
+		0C688264180DC2F600EC6E0A /* Value */ = {
+			isa = PBXGroup;
+			children = (
+				0C688265180DC30300EC6E0A /* Bookmark.h */,
+				0C688266180DC30300EC6E0A /* Bookmark.m */,
+			);
+			name = Value;
+			sourceTree = "<group>";
+		};
 		D89DC60D14592F4F000FC7C6 = {
 			isa = PBXGroup;
 			children = (
+				0C688268180DC92200EC6E0A /* Default-568h@2x.png */,
 				D89DC62214592F50000FC7C6 /* UIWebViewWebGL */,
 				D89DC61B14592F50000FC7C6 /* Frameworks */,
 				D89DC61914592F50000FC7C6 /* Products */,
 			);
-			indentWidth = 2;
+			indentWidth = 4;
 			sourceTree = "<group>";
-			tabWidth = 2;
+			tabWidth = 4;
 		};
 		D89DC61914592F50000FC7C6 /* Products */ = {
 			isa = PBXGroup;
@@ -66,6 +120,7 @@
 		D89DC61B14592F50000FC7C6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0C688262180DC19000EC6E0A /* libsqlite3.dylib */,
 				D89DC61C14592F50000FC7C6 /* UIKit.framework */,
 				D89DC61E14592F50000FC7C6 /* Foundation.framework */,
 				D89DC62014592F50000FC7C6 /* CoreGraphics.framework */,
@@ -76,9 +131,10 @@
 		D89DC62214592F50000FC7C6 /* UIWebViewWebGL */ = {
 			isa = PBXGroup;
 			children = (
+				0C68825B180DBF7100EC6E0A /* Model */,
+				0C688250180DB7B000EC6E0A /* ViewController */,
 				D89DC62B14592F50000FC7C6 /* WGLAppDelegate.h */,
 				D89DC62C14592F50000FC7C6 /* WGLAppDelegate.m */,
-				D89DC633145931B3000FC7C6 /* WebGL.html */,
 				D89DC62314592F50000FC7C6 /* Supporting Files */,
 			);
 			path = UIWebViewWebGL;
@@ -147,7 +203,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D89DC62714592F50000FC7C6 /* InfoPlist.strings in Resources */,
-				D89DC634145931B3000FC7C6 /* WebGL.html in Resources */,
+				0C688269180DC92200EC6E0A /* Default-568h@2x.png in Resources */,
+				0C688255180DB7DE00EC6E0A /* WebGLViewController.xib in Resources */,
+				0C68825A180DBBB800EC6E0A /* RootViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,7 +216,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C688254180DB7DE00EC6E0A /* WebGLViewController.m in Sources */,
+				0C688261180DC00C00EC6E0A /* Datastore.m in Sources */,
 				D89DC62914592F50000FC7C6 /* main.m in Sources */,
+				0C688267180DC30300EC6E0A /* Bookmark.m in Sources */,
+				0C688259180DBBB800EC6E0A /* RootViewController.m in Sources */,
 				D89DC62D14592F50000FC7C6 /* WGLAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -196,7 +258,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 			};
@@ -214,7 +276,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -224,10 +286,15 @@
 		D89DC63114592F50000FC7C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kyosuke Kameda (6BVMU8243A)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UIWebViewWebGL/UIWebViewWebGL-Prefix.pch";
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				INFOPLIST_FILE = "UIWebViewWebGL/UIWebViewWebGL-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "67A55001-5EB6-4BAA-8692-7D516D325980";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -235,10 +302,15 @@
 		D89DC63214592F50000FC7C6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Kyosuke Kameda (YW7K3M3Q85)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UIWebViewWebGL/UIWebViewWebGL-Prefix.pch";
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				INFOPLIST_FILE = "UIWebViewWebGL/UIWebViewWebGL-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8777C472-3E5A-41D5-B077-499CFC52EEC1";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
