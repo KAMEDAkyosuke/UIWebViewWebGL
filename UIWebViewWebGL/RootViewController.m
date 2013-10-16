@@ -59,6 +59,11 @@ static void (*alert_clicked_button_at_index[])(UIViewController*, UIAlertView*, 
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
+    self.navigationItem.leftBarButtonItem =
+    [UIBarButtonItem.alloc initWithBarButtonSystemItem:UIBarButtonSystemItemEdit
+                                                target:self
+                                                action:@selector(editBookmark:)];
+    
     self.navigationItem.rightBarButtonItem =
         [UIBarButtonItem.alloc initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
                                                     target:self
@@ -123,6 +128,29 @@ static void (*alert_clicked_button_at_index[])(UIViewController*, UIAlertView*, 
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    switch (indexPath.section) {
+        case kSectionBookmark:
+            switch (editingStyle) {
+                case UITableViewCellEditingStyleDelete:
+                    [[Datastore sharedDatastore] deletBookmark:[self.bookmark objectAtIndex:indexPath.row]];
+                    [self.bookmark removeObjectAtIndex:indexPath.row];
+                    [tableView deleteRowsAtIndexPaths:@[indexPath]
+                                     withRowAnimation:UITableViewRowAnimationAutomatic];
+                    break;
+                default:
+                    assert(false);
+                    break;
+            }
+            break;
+        default:
+            assert(false);
+            break;
+    }
+}
+
+
 #pragma mark - Table view delegate
 
 // In a xib-based application, navigation from a table can be handled in -tableView:didSelectRowAtIndexPath:
@@ -141,6 +169,12 @@ static void (*alert_clicked_button_at_index[])(UIViewController*, UIAlertView*, 
             assert(false);
             break;
     }
+}
+
+- (void)editBookmark:(id)sender
+{
+    [self.tableView setEditing:![self.tableView isEditing]
+                      animated:YES];
 }
 
 - (void)addBookmark:(id)sender
